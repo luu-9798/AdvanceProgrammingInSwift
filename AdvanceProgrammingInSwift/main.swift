@@ -94,3 +94,8 @@ class AppetizerDish: Dish {
         super.printInfo()
     }
 }
+
+//Create another child class
+class MainDish: Dish {
+    
+}
