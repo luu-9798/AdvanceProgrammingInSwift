@@ -67,3 +67,9 @@ confirmationCodes.remove("LL3451")
 allPhoneNumbers.remove("000-345-3443")
 
 print("\(allPhoneNumbers.count) \(confirmationCodes.count)")
+
+//Create a base class
+class Dish {
+    let name: String
+    var ingredients: [String]
+}
