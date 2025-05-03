@@ -85,3 +85,8 @@ class Dish {
         print(self.ingredients)
     }
 }
+
+//Subclass the base class
+class AppetizerDish: Dish {
+    
+}
