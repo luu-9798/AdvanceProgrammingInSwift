@@ -70,6 +70,6 @@ print("\(allPhoneNumbers.count) \(confirmationCodes.count)")
 
 //Create a base class
 class Dish {
-    let name: String
-    var ingredients: [String]
+    private let name: String
+    private var ingredients: [String]
 }
