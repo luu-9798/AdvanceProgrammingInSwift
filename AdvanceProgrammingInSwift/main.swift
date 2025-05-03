@@ -101,5 +101,17 @@ final class MainDish: Dish {}
 //Create a for-loop
 for _ in 0..<5 {
     let randomNumber = Int.random(in: 0...1)
-    
+    //Create a random dish
+    let dish: Dish
+    if randomNumber == 0 {
+        dish = AppetizerDish(
+            name: "Margherita Flatbread",
+            ingredients: ["Margherita","Flatbread",]
+        )
+    } else {
+        dish = MainDish(
+            name: "Super Spaghetti",
+            ingredients: ["Spaghetti","Tomato sauce",]
+        )
+    }
 }
