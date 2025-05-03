@@ -45,3 +45,9 @@ case .allergens(let allergens):
 let reserveInPerson: Set = ["000-345-3441","000-325-3443"]
 let reserveOverPhone: Set = ["000-345-3443", "000-345-5223"]
 let reserveOnline: Set = ["000-345-6223", "000-345-7223"]
+
+//Combine all the sets into a single set of all numbers
+let inPersonAndOverPhone = reserveInPerson.union(reserveOverPhone)
+print(inPersonAndOverPhone)
+var allPhoneNumbers = inPersonAndOverPhone.union(reserveOnline)
+print(allPhoneNumbers)
