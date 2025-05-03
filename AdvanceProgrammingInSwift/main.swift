@@ -72,4 +72,10 @@ print("\(allPhoneNumbers.count) \(confirmationCodes.count)")
 class Dish {
     private let name: String
     private var ingredients: [String]
+    
+    //Create a memberwise initializer
+    init(name: String, ingredients: [String]) {
+        self.name = name
+        self.ingredients = ingredients
+    }
 }
