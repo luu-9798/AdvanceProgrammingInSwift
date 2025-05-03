@@ -114,4 +114,9 @@ for _ in 0..<5 {
             ingredients: ["Spaghetti","Tomato sauce",]
         )
     }
+    
+    //Downcasting using an if let statement
+    if let appetizerDish = dish as? AppetizerDish {
+        appetizerDish.printInfo()
+    }
 }
