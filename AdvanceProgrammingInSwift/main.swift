@@ -51,3 +51,6 @@ let inPersonAndOverPhone = reserveInPerson.union(reserveOverPhone)
 print(inPersonAndOverPhone)
 var allPhoneNumbers = inPersonAndOverPhone.union(reserveOnline)
 print(allPhoneNumbers)
+
+//Create a Set for the reservation codes
+var confirmationCodes: Set = ["LL3450","LL3451","LL3452", "LL3453", "LL3454"]
