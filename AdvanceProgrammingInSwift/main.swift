@@ -40,3 +40,8 @@ switch recipeInformation {
 case .allergens(let allergens):
     print("The meal includes the following allergens: \(allergens)")
 }
+
+//Declare sets for each booking method
+let reserveInPerson: Set = ["000-345-3441","000-325-3443"]
+let reserveOverPhone: Set = ["000-345-3443", "000-345-5223"]
+let reserveOnline: Set = ["000-345-6223", "000-345-7223"]
