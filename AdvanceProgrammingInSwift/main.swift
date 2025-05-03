@@ -81,6 +81,7 @@ class Dish {
     
     //Define a method
     func printInfo() {
-        
+        print(self.name)
+        print(self.ingredients)
     }
 }
