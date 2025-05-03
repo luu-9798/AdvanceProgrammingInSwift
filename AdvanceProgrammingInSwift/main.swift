@@ -8,6 +8,8 @@
 import Foundation
 
 enum Ingredient {
-    
+    case lettuce
+    case croutons
+    case chicken
 }
 
