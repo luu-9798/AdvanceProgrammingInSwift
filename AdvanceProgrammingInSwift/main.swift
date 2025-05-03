@@ -119,4 +119,9 @@ for _ in 0..<5 {
     if let appetizerDish = dish as? AppetizerDish {
         appetizerDish.printInfo()
     }
+    
+    //Type checking
+    if dish is MainDish {
+        print("Main Dish!")
+    }
 }
