@@ -34,3 +34,9 @@ enum RecipeInformation {
 
 //Define a constant to represent the recipe information
 let recipeInformation: RecipeInformation = .allergens(information: "Peanut, Milk, Gluten")
+
+//Create a switch statement to print the allergens information
+switch recipeInformation {
+case .allergens(let allergens):
+    print("The meal includes the following allergens: \(allergens)")
+}
