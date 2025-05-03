@@ -88,5 +88,9 @@ class Dish {
 
 //Subclass the base class
 class AppetizerDish: Dish {
-    
+    //Override the base class method
+    override func printInfo() {
+        print("Appetizer")
+        super.printInfo()
+    }
 }
