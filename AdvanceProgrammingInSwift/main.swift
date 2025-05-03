@@ -61,3 +61,9 @@ print("\(allPhoneNumbers.count) \(confirmationCodes.count)")
 //Insert more confirmation codes if it is fewer than phone numbers
 confirmationCodes.insert("LL3455")
 print(confirmationCodes)
+
+//Remove the confirmation code and phone number for canceled reservations
+confirmationCodes.remove("LL3451")
+allPhoneNumbers.remove("000-345-3443")
+
+print("\(allPhoneNumbers.count) \(confirmationCodes.count)")
