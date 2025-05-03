@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum Ingredient {
-    case lettuce
-    case croutons
-    case chicken
+enum Ingredient: String {
+    case lettuce = "Romaine Lettuce"
+    case croutons = "Salted Croutons"
+    case chicken = "Free Range Chicken"
 }
 
