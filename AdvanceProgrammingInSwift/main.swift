@@ -54,3 +54,6 @@ print(allPhoneNumbers)
 
 //Create a Set for the reservation codes
 var confirmationCodes: Set = ["LL3450","LL3451","LL3452", "LL3453", "LL3454"]
+
+//Compare the number of codes to the number of phone numbers
+print("\(allPhoneNumbers.count) \(confirmationCodes.count)")
