@@ -31,3 +31,6 @@ case .chicken:
 enum RecipeInformation {
     case allergens(information: String)
 }
+
+//Define a constant to represent the recipe information
+let recipeInformation: RecipeInformation = .allergens(information: "Peanut, Milk, Gluten")
