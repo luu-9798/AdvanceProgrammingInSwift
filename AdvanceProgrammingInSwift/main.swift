@@ -78,4 +78,9 @@ class Dish {
         self.name = name
         self.ingredients = ingredients
     }
+    
+    //Define a method
+    func printInfo() {
+        
+    }
 }
