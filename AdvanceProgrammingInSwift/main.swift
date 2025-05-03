@@ -7,5 +7,7 @@
 
 import Foundation
 
-
+enum Ingredient {
+    
+}
 
