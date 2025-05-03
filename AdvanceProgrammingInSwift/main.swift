@@ -96,6 +96,10 @@ final class AppetizerDish: Dish {
 }
 
 //Create another child class
-final class MainDish: Dish {
+final class MainDish: Dish {}
+
+//Create a for-loop
+for _ in 0..<5 {
+    let randomNumber = Int.random(in: 0...1)
     
 }
