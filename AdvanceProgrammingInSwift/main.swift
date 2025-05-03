@@ -57,3 +57,7 @@ var confirmationCodes: Set = ["LL3450","LL3451","LL3452", "LL3453", "LL3454"]
 
 //Compare the number of codes to the number of phone numbers
 print("\(allPhoneNumbers.count) \(confirmationCodes.count)")
+
+//Insert more confirmation codes if it is fewer than phone numbers
+confirmationCodes.insert("LL3455")
+print(confirmationCodes)
