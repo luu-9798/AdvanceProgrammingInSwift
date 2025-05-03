@@ -17,3 +17,14 @@ enum Ingredient: String {
 //Create a new constant to hold one of the enumeration cases
 let ingredient: Ingredient = .lettuce
 
+//Create a switch statement to print information about each enumeration case
+switch ingredient {
+case .lettuce:
+    print("We use \(ingredient.rawValue) that has the richest flavor from all the lettuces.")
+case .croutons:
+    print("We sprinkle \(ingredient.rawValue) on top of our salads for added crunch.")
+case .chicken:
+    print("We grill or roast \(ingredient.rawValue) to add protein to our salads.")
+}
+
+
