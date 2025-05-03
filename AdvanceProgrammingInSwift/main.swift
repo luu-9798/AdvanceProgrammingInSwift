@@ -27,4 +27,7 @@ case .chicken:
     print("We grill or roast \(ingredient.rawValue) to add protein to our salads.")
 }
 
-
+//Create a new enumeration to represent the allergens
+enum RecipeInformation {
+    case allergens(information: String)
+}
