@@ -204,3 +204,6 @@ let mike = DeliveryDriver(name: "Mike")
 
 //Instantiate the Little Lemon restaurant
 let littleLemon = LittleLemon()
+
+//Call the food delivery method
+littleLemon.devileryFood(superSpaghetti.name, to: "Your house")
