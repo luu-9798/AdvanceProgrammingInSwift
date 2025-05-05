@@ -186,4 +186,9 @@ class DeliveryDriver: Driver {
 class LittleLemon {
     //Add a variable property
     var deliveryDriver: Driver?
+    
+    //Define a food delivery method
+    func devileryFood(_ food: String, to destination: String) {
+        
+    }
 }
