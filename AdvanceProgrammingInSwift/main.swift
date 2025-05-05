@@ -184,5 +184,6 @@ class DeliveryDriver: Driver {
 
 //Create a Little Lemon class instance
 class LittleLemon {
-    
+    //Add a variable property
+    var deliveryDriver: Driver?
 }
