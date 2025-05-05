@@ -202,4 +202,5 @@ class LittleLemon {
 // Instantiate a delivery driver
 let mike = DeliveryDriver(name: "Mike")
 
-
+//Instantiate the Little Lemon restaurant
+let littleLemon = LittleLemon()
