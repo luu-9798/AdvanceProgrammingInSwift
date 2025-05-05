@@ -125,3 +125,8 @@ for _ in 0..<5 {
         print("Main Dish!")
     }
 }
+
+//Define a custom protocol
+protocol Dish {
+    
+}
