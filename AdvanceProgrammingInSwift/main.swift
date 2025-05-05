@@ -166,3 +166,18 @@ superSpaghetti.prepare()
 
 //Calling the plate(artisticLevel :) method
 superSpaghetti.plate(artisticLevel: 10)
+
+//Add the driver protocol and delivery driver class instance
+protocol Driver {
+    var name: String { get }
+    func driveToDestination(_ destination: String, with food: String)
+}
+class DeliveryDriver: Driver {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
+    func driveToDestination(_ destination: String, with food: String) {
+        print("\(name) is driving to \(destination) to deliver \(food).")
+    }
+}
