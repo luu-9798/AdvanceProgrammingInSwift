@@ -198,3 +198,8 @@ class LittleLemon {
         }
     }
 }
+
+// Instantiate a delivery driver
+let mike = DeliveryDriver(name: "Mike")
+
+
