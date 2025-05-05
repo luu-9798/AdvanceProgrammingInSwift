@@ -157,3 +157,6 @@ class MainProtocolDish: ProtocolDish {
         print("Plating artistic level: \(artisticLevel)")
     }
 }
+
+//Instantiate a MainDish class instance
+let superSpaghetti = MainProtocolDish(name: "Super Spaghetti", preparartionMinutes: 35)
