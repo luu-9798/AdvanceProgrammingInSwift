@@ -142,4 +142,10 @@ class MainProtocolDish: ProtocolDish {
     //Conform to the protocol properties requirements
     let name: String
     var preparationMinutes: Int
+    
+    //Create a memberwise initializer
+    init(name: String, preparartionMinutes: Int) {
+        self.name = name
+        self.preparationMinutes = preparartionMinutes
+    }
 }
