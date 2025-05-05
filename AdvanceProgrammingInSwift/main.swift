@@ -163,3 +163,6 @@ let superSpaghetti = MainProtocolDish(name: "Super Spaghetti", preparartionMinut
 
 //Calling the prepare method
 superSpaghetti.prepare()
+
+//Calling the plate(artisticLevel :) method
+superSpaghetti.plate(artisticLevel: 10)
