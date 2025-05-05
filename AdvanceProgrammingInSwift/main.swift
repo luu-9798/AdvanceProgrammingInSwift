@@ -69,7 +69,7 @@ allPhoneNumbers.remove("000-345-3443")
 print("\(allPhoneNumbers.count) \(confirmationCodes.count)")
 
 //Create a base class
-class Dish {
+class BaseClassDish {
     private let name: String
     private var ingredients: [String]
     
@@ -87,7 +87,7 @@ class Dish {
 }
 
 //Subclass the base class
-final class AppetizerDish: Dish {
+final class AppetizerDish: BaseClassDish {
     //Override the base class method
     override func printInfo() {
         print("Appetizer")
@@ -96,13 +96,13 @@ final class AppetizerDish: Dish {
 }
 
 //Create another child class
-final class MainDish: Dish {}
+final class MainDish: BaseClassDish {}
 
 //Create a for-loop
 for _ in 0..<5 {
     let randomNumber = Int.random(in: 0...1)
     //Create a random dish
-    let dish: Dish
+    let dish: BaseClassDish
     if randomNumber == 0 {
         dish = AppetizerDish(
             name: "Margherita Flatbread",
@@ -127,6 +127,7 @@ for _ in 0..<5 {
 }
 
 //Define a custom protocol
-protocol Dish {
-    
+protocol ProtocalDish {
+    var name: String { get }
+    var preparationMinutes: Int { get set }
 }
