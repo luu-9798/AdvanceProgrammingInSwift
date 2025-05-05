@@ -139,5 +139,7 @@ protocol ProtocolDish {
 
 //Adopt the custom protocol in a class
 class MainProtocolDish: ProtocolDish {
-    
+    //Conform to the protocol properties requirements
+    let name: String
+    var preparationMinutes: Int
 }
