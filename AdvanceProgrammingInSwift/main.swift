@@ -128,6 +128,11 @@ for _ in 0..<5 {
 
 //Define a custom protocol
 protocol ProtocalDish {
+    //Define protocol properties requirements
     var name: String { get }
     var preparationMinutes: Int { get set }
+    
+    //Define protocol methods requirements
+    func prepare()
+    func plate(artisticLevel: Int)
 }
