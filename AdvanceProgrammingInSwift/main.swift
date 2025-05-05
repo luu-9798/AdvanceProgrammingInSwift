@@ -193,6 +193,8 @@ class LittleLemon {
         if let deliveryDriver = deliveryDriver {
             //Delegate the food delivery functionality
             deliveryDriver.driveToDestination(destination, with: food)
+        } else { //Handling the else statement
+            print("No delivery driver.")
         }
     }
 }
