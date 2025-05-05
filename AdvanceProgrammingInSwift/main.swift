@@ -148,4 +148,12 @@ class MainProtocolDish: ProtocolDish {
         self.name = name
         self.preparationMinutes = preparartionMinutes
     }
+    
+    //Conform to the protocol methods requirements
+    func prepare() {
+        print("Preparing \(name) for \(preparationMinutes) minutes")
+    }
+    func plate(artisticLevel: Int) {
+        print("Plating artistic level: \(artisticLevel)")
+    }
 }
