@@ -189,6 +189,9 @@ class LittleLemon {
     
     //Define a food delivery method
     func devileryFood(_ food: String, to destination: String) {
-        
+        //Unwrapping the delegate
+        if let deliveryDriver = deliveryDriver {
+            
+        }
     }
 }
