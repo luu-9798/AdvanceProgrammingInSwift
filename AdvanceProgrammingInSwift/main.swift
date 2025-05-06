@@ -214,10 +214,21 @@ littleLemon.deliveryDriver = mike
 //Assign a delivery driver to Little Lemon
 littleLemon.devileryFood(superSpaghetti.name, to: "Your house")
 
+//Create a custom enumeration for errors
+enum CalculatorError: Error {
+    case divisionByZero
+}
+
 //Create a class to represent a calculator
 class Calculator {
     // Create a division function
-    func divide(x: Double, y: Double) -> Double {
+    func divide(x: Double, y: Double) throw-> Double {
+        
+        //Check for division by zero inside your function and throw an error
+        if y == 0 {
+            throw CalculatorError.divisionByZero
+        }
+        
         return x / y
     }
 }
@@ -228,8 +239,3 @@ let calculator = Calculator()
 //Call the function to divide two numbers
 let successfulResult = calculator.divide(x: 1, y: 2)
 print(successfulResult)
-
-//Create a custom enumeration for errors
-enum CalculatorError: Error {
-    case divisionByZero
-}
