@@ -213,3 +213,6 @@ littleLemon.deliveryDriver = mike
 
 //Assign a delivery driver to Little Lemon
 littleLemon.devileryFood(superSpaghetti.name, to: "Your house")
+
+//Create a class to represent a calculator
+class Calculator {}
