@@ -236,6 +236,11 @@ class Calculator {
 //Initialize the class to a constant
 let calculator = Calculator()
 
-//Call the function to divide two numbers
-let successfulResult = calculator.divide(x: 1, y: 2)
-print(successfulResult)
+//Use do-catch on your function call to handle thrown errors
+do {
+    //Call the function to divide two numbers
+    let successfulResult = calculator.divide(x: 1, y: 2)
+    print(successfulResult)
+} catch CalculatorError.divisionByZero {
+    print("Division by zero detected and not allowed")
+}
