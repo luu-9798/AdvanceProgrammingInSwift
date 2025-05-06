@@ -215,4 +215,9 @@ littleLemon.deliveryDriver = mike
 littleLemon.devileryFood(superSpaghetti.name, to: "Your house")
 
 //Create a class to represent a calculator
-class Calculator {}
+class Calculator {
+    // Create a division function
+    func divide(x: Double, y: Double) -> Double {
+        return x / y
+    }
+}
