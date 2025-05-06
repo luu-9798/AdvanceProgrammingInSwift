@@ -222,7 +222,7 @@ enum CalculatorError: Error {
 //Create a class to represent a calculator
 class Calculator {
     // Create a division function
-    func divide(x: Double, y: Double) throw-> Double {
+    func divide(x: Double, y: Double) throws -> Double {
         
         //Check for division by zero inside your function and throw an error
         if y == 0 {
@@ -239,8 +239,11 @@ let calculator = Calculator()
 //Use do-catch on your function call to handle thrown errors
 do {
     //Call the function to divide two numbers
-    let successfulResult = calculator.divide(x: 1, y: 2)
+    let successfulResult = try calculator.divide(x: 1, y: 2)
     print(successfulResult)
+    
+    //Create success and failure scenarios for calling the division function
+    let invalidResult = try calculator.divide(x: 1, y: 0)
 } catch CalculatorError.divisionByZero {
     print("Division by zero detected and not allowed")
 }
