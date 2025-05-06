@@ -221,3 +221,6 @@ class Calculator {
         return x / y
     }
 }
+
+//Initialize the class to a constant
+let calculator = Calculator()
