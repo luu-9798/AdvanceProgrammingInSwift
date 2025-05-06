@@ -224,3 +224,7 @@ class Calculator {
 
 //Initialize the class to a constant
 let calculator = Calculator()
+
+//Call the function to divide two numbers
+let successfulResult = calculator.divide(x: 1, y: 2)
+print(successfulResult)
