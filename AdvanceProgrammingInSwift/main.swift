@@ -267,7 +267,8 @@ func totalRevenueOf(orders: [Order],  location: String) -> Int {
     //Print the order prices array to confirm the result
     print(ordersPrice)
     
-    return 0
+    //Return the sum of all high scores
+    return ordersPrice.reduce(0) { $0 + $1 }
 }
  
 let orders = [
