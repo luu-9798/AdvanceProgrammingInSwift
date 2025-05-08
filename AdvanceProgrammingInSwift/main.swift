@@ -257,6 +257,10 @@ struct Order {
 func totalRevenueOf(orders: [Order],  location: String) -> Int {
     //Use only orders related to the requested location
     let ordersAtLocation = orders.filter{ $0.location == location}
+    
+    //Confirm that filtered array contains the correct values
+    print(ordersAtLocation)
+    
     return 0
 }
  
