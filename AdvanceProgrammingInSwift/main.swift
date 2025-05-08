@@ -264,6 +264,9 @@ func totalRevenueOf(orders: [Order],  location: String) -> Int {
     //Convert filtered orders  array to array of their  prices
     let ordersPrice = ordersAtLocation.map{ $0.price }
     
+    //Print the order prices array to confirm the result
+    print(ordersPrice)
+    
     return 0
 }
  
