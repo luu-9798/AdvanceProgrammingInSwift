@@ -278,3 +278,6 @@ let orders = [
 ]
  
 let result = totalRevenueOf(orders: orders, location: "New York")
+
+//Confirm that function returns the correct result
+print(result)
